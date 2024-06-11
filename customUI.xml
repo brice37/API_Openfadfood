@@ -1,0 +1,28 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"> <!-- onLoad="initCustomRibbon" --> 
+
+	<ribbon> <!--startFromScratch="false" --> 
+	<tabs>
+		<tab id="customRibbonTab" label="Nutritionnelle" insertBeforeMso="TabHome">
+			<group id="oneSaisieOrderGroup" label="Recherche Nutritionnelle">
+				<button
+					id="Recherche"
+					label="Recherche"
+					screentip="Cliquez ici pour rechercher les valeurs nutritionnelle par produit"
+					size="large"
+					imageMso="RecentSearches"
+					onAction="generateOneSearchNutrition"
+				/> <!--getEnabled="isParametreEnabled"-->
+				<separator id="separator1" />
+				<button
+					id="Reinitialisation"
+					label="Reinitialisation"
+					screentip="Cliquez ici pour effacer les valeurs nutritionnelle affichées"
+					size="large"
+					imageMso="DeleteTable"
+					onAction="generateOneSuppressionFicheNutrition"
+				/>
+			</group>
+		</tab>  
+	</tabs>
+	</ribbon> 
+</customUI>
