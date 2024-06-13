@@ -14,7 +14,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Private TousMesControls(1 To 2) As New Classe1
+Private TousMesControls(1 To 2) As New Visualisation_USF
 
 Private Sub Btn1_Click()
  
@@ -23,7 +23,7 @@ With Me.Txt_Saisie
   If .Value <> "" Then
     ChargementListBox_Codes
   Else
-    .Value = "Aucune saisie effectuée"
+    .Value = "Aucune saisie effectuÃ©e"
     .ForeColor = vbRed
   End If
   
@@ -39,7 +39,7 @@ With Me.Cb_Search
      AffichageResultatRecherche (Me.Cb_Search.Value)
      Unload Me
   Else
-    .Value = "Aucune selection effectuée"
+    .Value = "Aucune selection effectuÃ©e"
     .ForeColor = vbRed
   End If
   
